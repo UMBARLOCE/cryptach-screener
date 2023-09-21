@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+  bot:
+    image: "cryptach-screener-image"
+    container_name: "cryptach-screener-container"
+    stop_signal: SIGINT
+    build:
+      context: .
+    working_dir: "/usr/src/app/screener"
+    volumes:
+    - .:/usr/src/app/screener
+    restart: always
+    networks:
+    - cryptach_screener
+
+
+networks:
+  cryptach_screener:
+    driver: bridge

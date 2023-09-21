@@ -1,0 +1,8 @@
+ccxt~=3.0.82
+aiogram~=2.25.1
+python-dotenv~=1.0.0
+pandas~=2.0.1
+pandas-ta
+plotly~=5.14.1
+kaleido~=0.2.1
+numba~=0.57.0
